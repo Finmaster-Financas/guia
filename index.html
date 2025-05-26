@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinMaster Finanças - Domine Suas Finanças e Transforme Sua Vida</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8fafc;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #065f46 100%);
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7);
+            }
+            70% {
+                transform: scale(1.02);
+                box-shadow: 0 0 0 10px rgba(74, 222, 128, 0);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(74, 222, 128, 0);
+            }
+        }
+        
+        .guarantee-badge {
+            background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
+        }
+        
+        .testimonial-card {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .bonus-item {
+            transition: all 0.3s ease;
+        }
+        
+        .bonus-item:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Countdown -->
+    <header class="gradient-bg text-white py-2 px-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-coins text-yellow-300 text-xl mr-2"></i>
+                <span class="font-bold">FinMaster Finanças</span>
+            </div>
+            <div class="text-sm font-medium">
+                <span class="hidden md:inline">Oferta expira em:</span>
+                <span id="countdown" class="bg-yellow-500 text-gray-900 px-2 py-1 rounded-md ml-2 font-bold">00:15:00</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-12 md:py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <div class="bg-yellow-500 text-gray-900 inline-block px-3 py-1 rounded-full text-xs font-bold mb-4">
+                    LANÇAMENTO EXCLUSIVO
+                </div>
+                <h1 class="text-3xl md:text-5xl font-bold leading-tight mb-4">
+                    Domine Suas Finanças e Transforme Sua Vida
+                </h1>
+                <h2 class="text-xl md:text-2xl font-medium mb-6">
+                    Descubra o Segredo Para Alcançar a Liberdade Financeira!
+                </h2>
+                <p class="text-lg mb-8">
+                    Aprenda a organizar suas finanças pessoais e profissionais de forma simples e eficaz com nosso guia completo e prático.
+                </p>
+                
+                <div class="bg-white rounded-lg p-6 text-gray-800 mb-8">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-check text-green-600"></i>
+                        </div>
+                        <p class="font-bold">4 Bônus Exclusivos Incluídos</p>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-check text-green-600"></i>
+                        </div>
+                        <p class="font-bold">Garantia de 7 Dias</p>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-check text-green-600"></i>
+                        </div>
+                        <p class="font-bold">Suporte por Email</p>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row items-center">
+                    <div class="mb-4 sm:mb-0 sm:mr-4">
+                        <span class="text-4xl font-bold">R$27</span>
+                        <span class="text-lg line-through opacity-75 ml-2">R$97</span>
+                    </div>
+                    <a href="https://pay.kiwify.com.br/OqcDLCG" class="bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-bold py-4 px-8 rounded-lg text-lg pulse-animation transition duration-300 flex items-center justify-center">
+                        <span>QUERO DOMINAR MINHAS FINANÇAS AGORA!</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                <p class="text-sm mt-2 text-center sm:text-left">
+                    Oferta exclusiva e limitada. Garanta já o seu!
+                </p>
+            </div>
+            
+            <div class="md:w-1/2">
+                <div class="bg-white rounded-xl overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Pessoa feliz com liberdade financeira" 
+                         class="w-full h-auto object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                <i class="fas fa-book text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">FinMaster Finanças</h3>
+                                <p class="text-sm text-gray-600">O guia definitivo para sua liberdade financeira</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Você está cansado de viver no vermelho e não conseguir realizar seus sonhos?
+                </h2>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-exclamation-triangle text-red-500 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-3">Contas Atrasadas</h3>
+                    <p class="text-gray-600 text-center">
+                        Sente que o dinheiro nunca é suficiente e que está sempre correndo atrás das contas?
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-chart-line text-blue-500 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-3">Falta de Controle</h3>
+                    <p class="text-gray-600 text-center">
+                        Não sabe para onde seu dinheiro está indo e sente que não tem controle sobre suas finanças?
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4 mx-auto">
+                        <i class="fas fa-sad-tear text-purple-500 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-3">Sonhos Adiados</h3>
+                    <p class="text-gray-600 text-center">
+                        Seus planos e sonhos sempre ficam para depois porque o dinheiro não dá?
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-r-lg">
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-lightbulb text-yellow-500 text-2xl"></i>
+                    </div>
+                    <div class="ml-3">
+                        <h3 class="text-xl font-bold text-gray-900">Mas existe uma solução!</h3>
+                        <p class="mt-2 text-gray-700">
+                            Você não precisa continuar nessa situação. O <span class="font-bold">FinMaster Finanças</span> foi criado exatamente para te ajudar a sair desse ciclo e conquistar a liberdade financeira que sempre sonhou.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Transforme Sua Vida Financeira com o FinMaster
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    O guia definitivo para você assumir o controle do seu dinheiro e construir um futuro próspero
+                </p>
+                <div class="w-24 h-1 bg-green-500 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex mb-6">
+                        <div class="flex-shrink-0">
+                            <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-wallet text-blue-500 text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-gray-900">Controle Seu Orçamento</h3>
+                            <p class="mt-2 text-gray-600">
+                                Aprenda a criar um orçamento eficaz e controlar seus gastos de forma simples e prática.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex mb-6">
+                        <div class="flex-shrink-0">
+                            <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-hand-holding-usd text-green-500 text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-gray-900">Saia das Dívidas</h3>
+                            <p class="mt-2 text-gray-600">
+                                Descubra como sair das dívidas e evitar novas armadilhas financeiras com estratégias comprovadas.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-chart-pie text-purple-500 text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-gray-900">Invista com Sabedoria</h3>
+                            <p class="mt-2 text-gray-600">
+                                Domine as técnicas de investimento e faz seu dinheiro trabalhar para você, mesmo começando do zero.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <div class="flex mb-6">
+                        <div class="flex-shrink-0">
+                            <div class="w-14 h-14 bg-yellow-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-piggy-bank text-yellow-500 text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-gray-900">Economize Inteligentemente</h3>
+                            <p class="mt-2 text-gray-600">
+                                Aprenda métodos práticos para economizar sem sacrifício e aumentar sua reserva financeira.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex mb-6">
+                        <div class="flex-shrink-0">
+                            <div class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-shield-alt text-red-500 text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-gray-900">Proteja Seu Dinheiro</h3>
+                            <p class="mt-2 text-gray-600">
+                                Conheça as armadilhas financeiras mais comuns e como se proteger para manter sua saúde financeira.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex">
+                        <div class="flex-shrink-0">
+                            <div class="w-14 h-14 bg-indigo-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-trophy text-indigo-500 text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-gray-900">Conquiste Seus Sonhos</h3>
+                            <p class="mt-2 text-gray-600">
+                                Tenha um plano claro para conquistar a liberdade financeira e realizar seus maiores sonhos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="https://pay.kiwify.com.br/OqcDLCG" class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition duration-300 inline-flex items-center">
+                    <span>QUERO TRANSFORMAR MINHAS FINANÇAS</span>
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonuses Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Bônus Exclusivos Para Você
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Adquira agora e receba esses presentes especiais para acelerar seus resultados
+                </p>
+                <div class="w-24 h-1 bg-yellow-500 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div class="bonus-item bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-blue-600 p-4 text-white text-center">
+                        <i class="fas fa-file-excel text-3xl mb-2"></i>
+                        <h3 class="font-bold text-lg">Planilha Financeira</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">
+                            Organize suas finanças de forma prática e eficiente com nossa planilha personalizada.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bonus-item bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-green-600 p-4 text-white text-center">
+                        <i class="fas fa-chart-bar text-3xl mb-2"></i>
+                        <h3 class="font-bold text-lg">Planilha de Investimentos</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">
+                            Acompanhe seus investimentos e veja seu patrimônio crescer com clareza e organização.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bonus-item bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-purple-600 p-4 text-white text-center">
+                        <i class="fas fa-book text-3xl mb-2"></i>
+                        <h3 class="font-bold text-lg">Ebook "Como Sair das Dívidas"</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">
+                            Descubra as melhores estratégias para se livrar das dívidas de uma vez por todas.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bonus-item bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="bg-yellow-600 p-4 text-white text-center">
+                        <i class="fas fa-graduation-cap text-3xl mb-2"></i>
+                        <h3 class="font-bold text-lg">Ebook "Domine Suas Finanças"</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">
+                            Aprofunde seus conhecimentos e torne-se um expert em finanças pessoais.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg">
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-gift text-blue-500 text-2xl"></i>
+                    </div>
+                    <div class="ml-3">
+                        <h3 class="text-xl font-bold text-gray-900">Valor Total dos Bônus: R$97</h3>
+                        <p class="mt-2 text-gray-700">
+                            Você receberá todos esses bônus <span class="font-bold">GRATUITAMENTE</span> ao adquirir o FinMaster Finanças hoje!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    O Que Nossos Alunos Estão Dizendo
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Veja como o FinMaster Finanças já transformou a vida de muitas pessoas
+                </p>
+                <div class="w-24 h-1 bg-green-500 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-white p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente satisfeita" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold">Ana Carolina</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Desde que comecei a aplicar as técnicas do FinMaster, minhas finanças nunca mais foram as mesmas. Consegui sair das dívidas e estou construindo um futuro financeiro incrível!"
+                    </p>
+                </div>
+                
+                <div class="testimonial-card bg-white p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente satisfeito" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold">Ricardo Almeida</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "O FinMaster é o guia mais completo e didático que já encontrei sobre finanças pessoais. Recomendo para todos que querem ter mais controle sobre o seu dinheiro."
+                    </p>
+                </div>
+                
+                <div class="testimonial-card bg-white p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Cliente satisfeita" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold">Fernanda Souza</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Em apenas 3 meses seguindo o método, já consegui economizar mais do que em todo o ano passado. Finalmente estou realizando meu sonho de viajar para o exterior!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="bg-green-50 rounded-xl p-8 md:p-12 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                    <div class="guarantee-badge text-white rounded-full w-40 h-40 flex items-center justify-center flex-col">
+                        <i class="fas fa-shield-alt text-4xl mb-2"></i>
+                        <span class="font-bold text-lg">Garantia</span>
+                        <span class="text-sm">7 Dias</span>
+                    </div>
+                </div>
+                
+                <div class="md:w-2/3 md:pl-8">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">
+                        Risco Zero Para Você
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-4">
+                        Oferecemos uma garantia incondicional de 7 dias. Se por qualquer motivo você não ficar satisfeito com o FinMaster Finanças, basta nos enviar um email e devolveremos 100% do seu dinheiro, sem perguntas.
+                    </p>
+                    <p class="text-gray-800 font-medium">
+                        Você não tem nada a perder e tudo a ganhar!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Perguntas Frequentes
+                </h2>
+                <div class="w-24 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden mb-6">
+                    <button class="faq-question w-full text-left p-6 font-bold text-lg flex justify-between items-center">
+                        <span>Este ebook é para mim, mesmo que eu não entenda nada de finanças?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-6 hidden">
+                        <p class="text-gray-600">
+                            Sim! O FinMaster foi criado para pessoas de todos os níveis de conhecimento financeiro. A linguagem é simples và didática, e você aprenderá tudo o que precisa para começar a transformar suas finanças, mesmo que esteja começando do zero.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden mb-6">
+                    <button class="faq-question w-full text-left p-6 font-bold text-lg flex justify-between items-center">
+                        <span>Terei suporte caso tenha dúvidas?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-6 hidden">
+                        <p class="text-gray-600">
+                            Sim! Oferecemos suporte por email para todos os nossos clientes. Se você tiver alguma dúvida, basta nos enviar um email e nossa equipe estará pronta para te ajudar a tirar todas as suas dúvidas sobre o conteúdo.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden mb-6">
+                    <button class="faq-question w-full text-left p-6 font-bold text-lg flex justify-between items-center">
+                        <span>Como receberei o material após a compra?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-6 hidden">
+                        <p class="text-gray-600">
+                            Imediatamente após a confirmação do pagamento, você receberá um email com os links para download de todos os materiais (ebook + bônus). O processo é totalmente digital e você poderá acessar tudo em poucos minutos.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden mb-6">
+                    <button class="faq-question w-full text-left p-6 font-bold text-lg flex justify-between items-center">
+                        <span>Qual a garantia que tenho ao adquirir o FinMaster?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-6 hidden">
+                        <p class="text-gray-600">
+                            Oferecemos garantia de satisfação de 7 dias. Se, por qualquer motivo, você não estiver satisfeito com o FinMaster, basta nos enviar um email dentro desse período e devolveremos o seu dinheiro integralmente, sem burocracia.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="faq-question w-full text-left p-6 font-bold text-lg flex justify-between items-center">
+                        <span>Quanto tempo levo para ver resultados?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-6 pb-6 hidden">
+                        <p class="text-gray-600">
+                            Os resultados começam a aparecer desde as primeiras lições, pois você já aprenderá técnicas práticas para aplicar imediatamente. No entanto, os melhores resultados vêm com a aplicação consistente ao longo do tempo. Muitos alunos relatam melhoras significativas já no primeiro mês.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                Domine Suas Finanças Hoje Mesmo!
+            </h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                Tudo isso por apenas <span class="font-bold">R$27</span>! Mas atenção: esta oferta é por tempo limitado!
+            </p>
+            
+            <div class="bg-white rounded-lg p-8 max-w-2xl mx-auto text-gray-800 mb-8">
+                <h3 class="text-2xl font-bold mb-4">Você Receberá:</h3>
+                <ul class="text-left space-y-3 mb-6">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                        <span>Ebook FinMaster Finanças (valor: R$97)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                        <span>Planilha Financeira para Controle Pessoal (valor: R$47)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                        <span>Planilha de Investimentos (valor: R$47)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                        <span>Ebook "Como Sair das Dívidas" (valor: R$37)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                        <span>Ebook "Domine Suas Finanças" (valor: R$37)</span>
+                    </li>
+                </ul>
+                <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4">
+                    <p class="font-bold">
+                        Valor Total: <span class="line-through">R$265</span>
+                    </p>
+                    <p class="text-2xl font-bold text-green-600">
+                        HOJE POR APENAS: R$27
+                    </p>
+                </div>
+            </div>
+            
+            <a href="https://pay.kiwify.com.br/OqcDLCG" class="bg-yellow-500 hover:bg-yellow-400 text-gray-900 font-bold py-5 px-12 rounded-lg text-xl pulse-animation transition duration-300 inline-flex items-center mb-4">
+                <span>SIM, QUERO DOMINAR MINHAS FINANÇAS!</span>
+                <i class="fas fa-arrow-right ml-3"></i>
+            </a>
+            
+            <div class="flex items-center justify-center">
+                <img src="https://www.hotmart.com/assets/images/checkout/secure-payments.png" alt="Pagamento seguro" class="h-8 mr-3">
+                <p class="text-sm">
+                    Pagamento 100% seguro via Kiwify
+                </p>
+            </div>
+            
+            <div class="mt-8 bg-white bg-opacity-10 rounded-lg p-4 max-w-2xl mx-auto">
+                <p class="font-medium">
+                    <i class="fas fa-exclamation-triangle mr-2"></i>
+                    Esta oferta especial de lançamento termina em: 
+                    <span id="countdown-bottom" class="font-bold">00:15:00</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <i class="fas fa-coins text-yellow-300 text-xl mr-2"></i>
+                        <span class="font-bold">FinMaster Finanças</span>
+                    </div>
+                    <p class="text-sm text-gray-400 mt-1">
+                        © 2023 FinMaster Finanças. Todos os direitos reservados.
+                    </p>
+                </div>
+                
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-8 border-t border-gray-800 text-sm text-gray-400">
+                <p class="text-center">
+                    Este produto não garante a obtenção de resultados. Qualquer referência ao desempenho de uma estratégia não deve ser interpretada como uma garantia de resultados. Os resultados variam de pessoa para pessoa dependendo de diversos fatores.
+                </p>
+                <p class="text-center mt-4">
+                    <a href="#" class="underline hover:text-white">Termos de Uso</a> | 
+                    <a href="#" class="underline hover:text-white">Política de Privacidade</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            let now = new Date();
+            let endTime = new Date(now.getTime() + 15 * 60000); // 15 minutes from now
+            
+            let x = setInterval(function() {
+                let now = new Date().getTime();
+                let distance = endTime - now;
+                
+                let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+                
+                document.getElementById("countdown").innerHTML = "00:" + minutes + ":" + seconds;
+                document.getElementById("countdown-bottom").innerHTML = "00:" + minutes + ":" + seconds;
+                
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("countdown").innerHTML = "OFERTA EXPIRADA";
+                    document.getElementById("countdown-bottom").innerHTML = "OFERTA EXPIRADA";
+                }
+            }, 1000);
+        }
+        
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                answer.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCountdown();
+        });
+    </script>
+<p style="border-radius: 8px; text-align: center; font-size: 12px; color: #fff; margin-top: 16px;position: fixed; left: 8px; bottom: 8px; z-index: 10; background: rgba(0, 0, 0, 0.8); padding: 4px 8px;">Made with <img src="https://enzostvs-deepsite.hf.space/logo.svg" alt="DeepSite Logo" style="width: 16px; height: 16px; vertical-align: middle;display:inline-block;margin-right:3px;filter:brightness(0) invert(1);"><a href="https://enzostvs-deepsite.hf.space" style="color: #fff;text-decoration: underline;" target="_blank" >DeepSite</a> - 🧬 <a href="https://enzostvs-deepsite.hf.space?remix=Wilson1177/finmaster" style="color: #fff;text-decoration: underline;" target="_blank" >Remix</a></p></body>
+</html>
